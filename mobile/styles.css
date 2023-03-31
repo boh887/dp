@@ -1,0 +1,105 @@
+ body {
+  margin: 0;
+  padding: 0;
+ }
+ 
+ #background 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: relative; 
+	 margin-left: auto; 
+	 margin-right: auto; 
+	 width: 1920px;
+	 height: 4320px; 
+	 overflow: hidden;
+	 z-index:0;
+	} 
+
+ #Layer4 
+{ 
+	 left: -262px; 
+	 top: -42px; 
+	 position: absolute; 
+	 width: 2444px;
+	 height: 4389px;
+	 z-index:1;
+} 
+
+ #Layer400 
+{ 
+	 left: 0px; 
+	 top: -42px; 
+	 position: absolute; 
+	 width: 2444px;
+	 height: 4389px;
+	 z-index:1;
+} 
+
+ #Layer2 
+{ 
+	 left: 1300px; 
+	 top: 1549px; 
+	 position: absolute; 
+	 width: 604px;
+	 height: 2160px;
+	 z-index:2;
+} 
+
+ #Layer3 
+{ 
+	 left: 76px; 
+	 top: 1549px; 
+	 position: absolute; 
+	 width: 604px;
+	 height: 216px;
+	 z-index:2;
+} 
+img {
+	max-width: 100%;
+	height: auto;
+  }
+
+  body {
+	margin: 0;
+	padding: 0;
+   }
+   
+   #backgroundh 
+  { 
+	background-image:url('../images/bg.png');
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	  } 
+  
+   #layer_1h 
+  { 
+	left: -262px; 
+	top: -42px; 
+	position: absolute; 
+	width: 2444px;
+	height: 4389px;
+	z-index:1;
+  } 
+  
+   #layer_2h 
+  { 
+	   left: -15px; 
+	   top: 0px; 
+	   position: absolute; 
+	   width: 649px;
+	   height: 129px;
+	   z-index:2;
+  } 
+  @media screen and (min-aspect-ratio: 16/9) {
+	body {
+	  overflow-x: hidden;
+	}
+  
+	#background {
+	  width: 16/9;
+	  height: 16/9;
+	}
+  }
+  

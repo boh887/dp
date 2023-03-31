@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Loading...</title>
+    <style>
+      /* Style the spinner */
+      .spinner {
+        margin: 100px auto;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        border: 5px solid #fff;
+        border-top-color: #2ecc71;
+        border-radius: 50%;
+        animation: spin 1s ease-in-out infinite;
+      }
+      /* Animate the spinner */
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+    <script>
+      // Define the redirect URLs for desktop and mobile devices
+      var desktopUrl = "./desktop/index.html";
+      var mobileUrl = "./mobile/index.html";
+      
+      // Delay the redirect for 5 seconds
+      setTimeout(function() {
+        // Check the user's device type and redirect to the appropriate URL
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          // Redirect to mobile site
+          window.location.replace(mobileUrl);
+        } else {
+          // Redirect to desktop site
+          window.location.replace(desktopUrl);
+        }
+      }, 5000); // 5000 milliseconds = 5 seconds
+    </script>
+  </head>
+  <body>
+    <!-- Display the spinner while the page is loading -->
+    <div class="spinner"></div>
+    <!-- Your website content goes here -->
+  </body>
+</html>
